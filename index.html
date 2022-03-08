@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Belajar Javascript - NIOMIC</title>
+</head>
+
+<body>
+  <button type="button" onclick="yomasa()">Jalankan</button> <br><br>
+  <hr>
+  <b>Base URI</b> Property :
+  <p id="first">contoh</p>
+  <hr>
+  <b>Body</b> Property :
+  <p id="second">contoh</p>
+  <hr>
+  <b>Create</b> Element : <br><br>
+
+  <script type="text/javascript">
+    function yomasa() {
+
+      var one = document.baseURI;
+      document.getElementById('first').innerHTML = one;
+      document.body.style.backgroundColor = "green";
+      document.getElementById('second').innerHTML = "color : green"
+      var two = document.createElement('input');
+      document.body.appendChild(two);
+    }
+  </script>
+</body>
+
+</html>
